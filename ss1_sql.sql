@@ -1,4 +1,4 @@
-create database `my_database`;
+create database `student-management`;
 CREATE TABLE `class`(
 id INT NOT NULL PRIMARY KEY,
 `name` VARCHAR(45));
