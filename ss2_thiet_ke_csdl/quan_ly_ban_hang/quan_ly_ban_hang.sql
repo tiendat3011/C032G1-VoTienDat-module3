@@ -22,7 +22,7 @@ CREATE TABLE product (
     p_prime INT
 );
 
-CREATE TABLE order_detal (
+CREATE TABLE order_detail (
     o_id INT,
     p_id INT,
     od_qty INT,
