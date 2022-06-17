@@ -153,11 +153,11 @@ INSERT INTO nhan_vien (ho_ten, ngay_sinh, so_cmnd, luong, so_dien_thoai, email, 
 
 INSERT INTO loai_khach ( ten_loai_khach)
  VALUES 
-( 'Diamond'),
-( 'Platinium'),
-( 'Gold'),
-( 'Silver'),
-( 'Member');
+('Diamond'),
+('Platinium'),
+('Gold'),
+('Silver'),
+('Member');
 
 INSERT INTO khach_hang ( ho_ten, ngay_sinh, gioi_tinh, so_cmnd, so_dien_thoai, email, dia_chi, ma_loai_khach)
 VALUES 
