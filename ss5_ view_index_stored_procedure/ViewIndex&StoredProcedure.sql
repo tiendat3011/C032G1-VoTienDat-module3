@@ -1,29 +1,73 @@
 CREATE DATABASE ss5;
 use ss5;
 
-CREATE TABLE product(
-id INT AUTO_INCREMENT PRIMARY KEY,
-product_code VARCHAR(50),
-product_name VARCHAR(50),
-product_price INT,
-product_amount INT,
-product_description VARCHAR(50),
-product_status VARCHAR(50)
+
+create table products(
+id int primary key auto_increment,
+productCode varchar (50),
+productName varchar (50),
+productPrice  double,
+productAmount int,
+productDescription varchar (50),
+productStatus varchar(30)
 );
-INSERT INTO product
-VALUE
-(1, 'IP-6', 'iphone 6', 500, 10, 'From USA', '99%'),
-(2, 'IP-7', 'iphone 7', 700, 10, 'From USA', '100%'),
-(3, 'IP-8', 'iphone 8', 1500, 5, 'From UK', '99%'),
-(4, 'IP-X', 'i phone X', 1900, 4, 'From Korea', '100%'),
-(5, 'IP-XS', 'i phone XS', 2000, 9, 'From Taiwan', '95%');
+insert into products (productCode,productName,productPrice,productAmount,productDescription,productStatus) values
+('1ab', 'ABC', 3000, 10,'Alphabet', 'Sold out'), ('2bc','123', 3000, 10,"Number", 'on sale');
+create unique index index_product on products (productCode);
 
-EXPLAIN SELECT * FROM products WHERE product_code = 'IP-XS';
+create index composite_index on products (productName, productPrice);
 
-CREATE INDEX id_products_code ON products(product_code);
+explain select * from products where productCode like '1ab';
 
-EXPLAIN SELECT * FROM products WHERE product_code = 'IP-XS';
+create view view_product as
+select productCode, productName, productPrice,productStatus from products;
 
-CREATE INDEX composite_id_products ON products(product_decription, product_status);
+update view_product set productCode = '3cd' where productCode = '1ab';
+select * from view_product;
+select * from products;
+drop view view_product;
 
-EXPLAIN SELECT * FROM products WHERE product_decription = 'From USA' AND product_status = '100%';
+delimiter // 
+create procedure sp_product()
+begin 
+select * from products;
+end //
+delimiter ;
+
+call sp_product();
+
+delimiter //
+create procedure sp_newProduct(
+productCode varchar(50), 
+productName varchar(50), 
+productPrice double, 
+productAMount int, 
+productDescription varchar(50), 
+productStatus varchar(50))
+begin
+	insert into products (productCode, productName, productPrice, productAMount, productDescription, productStatus) values
+    ( productCode, productName, productPrice, productAMount, productDescription, productStatus);
+end // 
+delimiter ;
+
+call sp_newProduct ('5lk', "Dat", 2000, 2,"aaa", "abc");
+
+delimiter //
+create procedure update_product (id_product int)
+begin
+update products
+set productName = "Linh" where id = id_product;
+end //
+delimiter ;
+
+call update_product (2);
+
+delimiter //
+create procedure delete_product (id_product int)
+begin
+delete from products
+ where id = id_product;
+end //
+delimiter ;
+
+call delete_product(3);
