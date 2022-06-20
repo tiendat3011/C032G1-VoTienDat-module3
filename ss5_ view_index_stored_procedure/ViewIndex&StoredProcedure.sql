@@ -1,73 +1,83 @@
 CREATE DATABASE ss5;
 use ss5;
 
-
-create table products(
-id int primary key auto_increment,
-productCode varchar (50),
-productName varchar (50),
-productPrice  double,
-productAmount int,
-productDescription varchar (50),
-productStatus varchar(30)
+CREATE TABLE products(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    product_code VARCHAR(50),
+    product_name VARCHAR(50),
+    product_price INT,
+    product_amonut INT,
+    product_decription VARCHAR(100),
+    product_status VARCHAR(50)
 );
-insert into products (productCode,productName,productPrice,productAmount,productDescription,productStatus) values
-('1ab', 'ABC', 3000, 10,'Alphabet', 'Sold out'), ('2bc','123', 3000, 10,"Number", 'on sale');
-create unique index index_product on products (productCode);
 
-create index composite_index on products (productName, productPrice);
+INSERT INTO products
+ VALUE
+(1, 'IP-X', 'iphone X', 500, 10, 'From USA', '99%'),
+(2, 'IP-11', 'iphone 11', 700, 10, 'From USA', '100%'),
+(3, 'IP-13', 'iphone 13', 1500, 5, 'From UK', '99%'),
+(4, 'SS13', 'Sam Sung 13', 200, 4, 'From Korea', '100%'),
+(5, 'HW-S', 'Huawei S', 1300, 9, 'From Taiwan', '95%');
 
-explain select * from products where productCode like '1ab';
+EXPLAIN SELECT * FROM products WHERE product_code = 'HW-S';
 
-create view view_product as
-select productCode, productName, productPrice,productStatus from products;
+CREATE INDEX id_products_code ON products(product_code);
 
-update view_product set productCode = '3cd' where productCode = '1ab';
-select * from view_product;
-select * from products;
-drop view view_product;
+EXPLAIN SELECT * FROM products WHERE product_code = 'HW-S';
 
-delimiter // 
-create procedure sp_product()
-begin 
-select * from products;
-end //
-delimiter ;
+CREATE INDEX composite_id_products ON products(product_decription, product_status);
 
-call sp_product();
+EXPLAIN SELECT * FROM products 
+WHERE product_decription = 'From USA' AND product_status = '100%';
 
-delimiter //
-create procedure sp_newProduct(
-productCode varchar(50), 
-productName varchar(50), 
-productPrice double, 
-productAMount int, 
-productDescription varchar(50), 
-productStatus varchar(50))
-begin
-	insert into products (productCode, productName, productPrice, productAMount, productDescription, productStatus) values
-    ( productCode, productName, productPrice, productAMount, productDescription, productStatus);
-end // 
-delimiter ;
+CREATE VIEW view_test AS
+SELECT product_code, product_name, product_price, product_status FROM products;
 
-call sp_newProduct ('5lk', "Dat", 2000, 2,"aaa", "abc");
+SELECT * FROM view_test;
 
-delimiter //
-create procedure update_product (id_product int)
-begin
-update products
-set productName = "Linh" where id = id_product;
-end //
-delimiter ;
+SET SQL_SAFE_UPDATES = 0;
+UPDATE view_test
+SET product_status = '100%';
 
-call update_product (2);
+DELETE FROM view_test
+WHERE product_price < 700;
 
-delimiter //
-create procedure delete_product (id_product int)
-begin
-delete from products
- where id = id_product;
-end //
-delimiter ;
+DELIMITER \\
+CREATE PROCEDURE get_all_products()
+BEGIN
+	SELECT * FROM products;
+END\\
+DELIMITER ;
 
-call delete_product(3);
+CALL get_all_products;
+
+DELIMITER \\
+CREATE PROCEDURE add_new_products()
+BEGIN
+	INSERT INTO products (product_code, product_name, product_price, product_amonut, product_decription, product_status)
+    VALUE ('IP-15-PRO', 'Iphone 15', 4000, 2, 'From VN', '100%');
+END\\
+DELIMITER ;
+
+CALL add_new_products;
+
+DELIMITER \\
+CREATE PROCEDURE edit_price_by_id(IN set_id INT, IN price INT)
+BEGIN
+	UPDATE products
+    SET product_price = price
+    WHERE id = set_id;
+END\\
+DELIMITER ;
+
+CALL edit_price_by_id(3, 2000)
+
+DELIMITER \\
+CREATE PROCEDURE delete_product_by_id(IN set_id INT)
+BEGIN
+	DELETE FROM products
+    WHERE id = set_id;
+END\\
+DELIMITER ;
+
+CALL delete_product_by_id(3)

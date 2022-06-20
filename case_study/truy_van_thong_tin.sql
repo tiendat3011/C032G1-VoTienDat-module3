@@ -73,3 +73,41 @@ GROUP BY ma_khach_hang
 ORDER BY month(ngay_lam_hop_dong);
 
 -- task10
+
+select hd.ma_hop_dong,
+ hd.ngay_lam_hop_dong, 
+ hd.ngay_ket_thuc, 
+ hd.tien_dat_coc, 
+ sum(ifnull(hdct.so_luong,0)) as 'Số lần sử dụng'
+from hop_dong hd
+LEFT join hop_dong_chi_tiet hdct on hdct.ma_hop_dong= hd.ma_hop_dong
+LEFT JOIN dich_vu_di_kem dvdk on dvdk.ma_dich_vu_di_kem= hdct.ma_dich_vu_di_kem
+group by hd.ma_hop_dong
+ORDER BY ma_hop_dong;
+
+-- task11
+
+select dvdk.ma_dich_vu_di_kem, dvdk.ten_dich_vu_di_kem, dvdk.gia, dvdk.don_vi, dvdk.trang_thai, lk.ten_loai_khach, kh.ho_ten
+from hop_dong_chi_tiet hdct 
+join dich_vu_di_kem dvdk on hdct.ma_dich_vu_di_kem= dvdk.ma_dich_vu_di_kem
+join hop_dong hd on hdct.ma_hop_dong = hd.ma_hop_dong
+join khach_hang kh on hd.ma_khach_hang= kh.ma_khach_hang
+join loai_khach lk on kh.ma_loai_khach= lk.ma_loai_khach
+where lk.ten_loai_khach = "Diamond" and (kh.dia_chi = "Vinh" OR kh.dia_chi = "Quảng Ngãi")
+;
+
+-- task 12
+select hd.ma_hop_dong, nv.ho_ten, kh.ho_ten, kh.so_dien_thoai, dv.ten_dich_vu, sum(hdct.so_luong) as 'Số lượng dịch vụ đi kèm', hd.tien_dat_coc,hd.ngay_lam_hop_dong
+from hop_dong_chi_tiet hdct 
+right join hop_dong hd on hdct.ma_hop_dong = hd.ma_hop_dong
+join dich_vu dv on hd.ma_dich_vu = dv.ma_dich_vu
+join khach_hang kh on hd.ma_khach_hang = kh.ma_khach_hang
+join nhan_vien nv on hd.ma_nhan_vien = nv.ma_nhan_vien
+where (dv.ma_dich_vu in (select ma_dich_vu from hop_dong where year(ngay_lam_hop_dong)=2020 and quarter(ngay_lam_hop_dong)=4))
+and (dv.ma_dich_vu not in (select hd.ma_dich_vu from hop_dong hd where year(hd.ngay_lam_hop_dong) =2021 and quarter(hd.ngay_lam_hop_dong)<=2))
+group by hd.ma_hop_dong
+;
+
+-- task 13
+
+
