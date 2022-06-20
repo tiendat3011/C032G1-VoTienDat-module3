@@ -21,7 +21,7 @@ INSERT INTO products
 
 EXPLAIN SELECT * FROM products WHERE product_code = 'HW-S';
 
-CREATE INDEX id_products_code ON products(product_code);
+CREATE UNIQUE INDEX id_products_code ON products(product_code);
 
 EXPLAIN SELECT * FROM products WHERE product_code = 'HW-S';
 
@@ -29,6 +29,7 @@ CREATE INDEX composite_id_products ON products(product_decription, product_statu
 
 EXPLAIN SELECT * FROM products 
 WHERE product_decription = 'From USA' AND product_status = '100%';
+
 
 CREATE VIEW view_test AS
 SELECT product_code, product_name, product_price, product_status FROM products;
@@ -46,8 +47,8 @@ DELIMITER \\
 CREATE PROCEDURE get_all_products()
 BEGIN
 	SELECT * FROM products;
-END\\
-DELIMITER ;
+END
+\\ DELIMITER ;
 
 CALL get_all_products;
 
@@ -56,8 +57,8 @@ CREATE PROCEDURE add_new_products()
 BEGIN
 	INSERT INTO products (product_code, product_name, product_price, product_amonut, product_decription, product_status)
     VALUE ('IP-15-PRO', 'Iphone 15', 4000, 2, 'From VN', '100%');
-END\\
-DELIMITER ;
+END
+\\ DELIMITER ;
 
 CALL add_new_products;
 
@@ -67,8 +68,8 @@ BEGIN
 	UPDATE products
     SET product_price = price
     WHERE id = set_id;
-END\\
-DELIMITER ;
+END
+\\ DELIMITER ;
 
 CALL edit_price_by_id(3, 2000)
 
@@ -77,7 +78,7 @@ CREATE PROCEDURE delete_product_by_id(IN set_id INT)
 BEGIN
 	DELETE FROM products
     WHERE id = set_id;
-END\\
-DELIMITER ;
+END
+\\ DELIMITER ;
 
 CALL delete_product_by_id(3)
