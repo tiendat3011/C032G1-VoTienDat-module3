@@ -37,7 +37,7 @@ INNER JOIN loai_dich_vu on loai_dich_vu.ma_loai_dich_vu = dich_vu.ma_loai_dich_v
 WHERE dich_vu.ma_dich_vu NOT IN 
 (SELECT hop_dong.ma_dich_vu 
 FROM hop_dong 
-WHERE year(hop_dong.ngay_lam_hop_dong) = 2021 AND quarter(hop_dong.ngay_lam_hop_dong) =1 )
+WHERE year(hop_dong.ngay_lam_hop_dong) = 2021 AND quarter(hop_dong.ngay_lam_hop_dong) = 1 )
 GROUP BY dich_vu.ma_dich_vu;
 
 -- task7 
@@ -80,6 +80,18 @@ select hd.ma_hop_dong,
  hd.ngay_ket_thuc, 
  hd.tien_dat_coc, 
  sum(ifnull(hdct.so_luong,0)) as 'Số lần sử dụng'
+from hop_dong hd
+LEFT join hop_dong_chi_tiet hdct on hdct.ma_hop_dong= hd.ma_hop_dong
+LEFT JOIN dich_vu_di_kem dvdk on dvdk.ma_dich_vu_di_kem= hdct.ma_dich_vu_di_kem
+group by hd.ma_hop_dong
+ORDER BY ma_hop_dong;
+
+select hd.ma_hop_dong,
+ hd.ngay_lam_hop_dong, 
+ hd.ngay_ket_thuc, 
+ hd.tien_dat_coc, 
+ sum(ifnull(hdct.so_luong,0)) as 'Số lần sử dụng', 
+ GROUP_CONCAT(dvdk.ten_dich_vu_di_kem) as ten_dich_vu_di_kem
 from hop_dong hd
 LEFT join hop_dong_chi_tiet hdct on hdct.ma_hop_dong= hd.ma_hop_dong
 LEFT JOIN dich_vu_di_kem dvdk on dvdk.ma_dich_vu_di_kem= hdct.ma_dich_vu_di_kem
@@ -181,7 +193,6 @@ from (select dich_vu_di_kem.* from hop_dong_chi_tiet
 join dich_vu_di_kem  on hop_dong_chi_tiet.ma_dich_vu_di_kem = dich_vu_di_kem.ma_dich_vu_di_kem
 join hop_dong  on hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
 where hop_dong_chi_tiet.so_luong >10 and year(hop_dong.ngay_lam_hop_dong)=2020) as temp) ;
-
 
 -- task 20
 
