@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tiến Đạt</title>
+    <script src="https://kit.fontawesome.com/ef7e2b893b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-left"><img class="logo" src="../images/facebook.png" alt="">
+        <div class="search-box" >
+            <img src="../images/search.png" alt="">
+            <input type="text" placeholder="Tìm Kiếm Trên FaceBook">
+        </div>
+        <ul class="navlogo">
+            <li><img src="../images/home.png"></li>
+            <li><img src="../images/series.png"></li>
+            <li><img src="../images/mmm.png"></li>
+            <li><img src="../images/target.png"></li>
+            <li><img src="../images/console.png"></li>
+        </ul>
+    </div>
+    <div class="nav-right">
+        <div class="profile-image online" onclick="UserSettingToggle()">
+            <img src="../images/dat-icon.jpg" alt="">
+        </div>
+    </div>
+    <div class="user-settings">
+        <div class="profile-darkButton">
+            <div class="user-profile">
+                <img src="../images/dat-icon.jpg" alt="">
+                <div>
+                    <p> Tiến Đạt</p>
+                    <a href="#">Xem Trang Cá Nhân</a>
+                </div>
+            </div>
+            <div id="dark-button" onclick="darkModeON()">
+                <span></span>
+            </div>
+        </div>
+        <div class="settings-links">
+            <img src="../images/setting.png" alt="" class="settings-icon">
+            <a href="#">Cầi đặt & Quyền Riêng Tư <img src="../images/arrow.png" alt=""></a>
+        </div>
+
+        <div class="settings-links">
+            <img src="../images/help.png" alt="" class="settings-icon">
+            <a href="#">Trợ Giúp & Hỗ Trợ <img src="../images/arrow.png" alt=""></a>
+        </div>
+
+        <div class="settings-links">
+            <img src="images/Display.png" alt="" class="settings-icon">
+            <a href="#">Màn Hình & Trợ Năng <img src="../images/arrow.png" alt=""></a>
+        </div>
+
+        <div class="settings-links">
+            <img src="../images/feedback.png" alt="" class="settings-icon">
+            <a href="#">Đóng Góp Ý Kiến <img src="../images/arrow.png" alt=""></a>
+        </div>
+
+        <div class="settings-links">
+            <img src="../images/logout.png" alt="" class="settings-icon">
+            <a href="#">Đăng xuất <img src="../images/arrow.png" alt=""></a>
+        </div>
+
+    </div>
+</nav>
+
+<div class="container">
+    <div class="left-sidebar">
+        <div class="important-links">
+            <a href="#"><img src="../images/dat-icon.jpg" alt="">Tiến Đạt</a>
+            <a href="#"><img src="../images/friends.png" alt="">Bạn Bè</a>
+            <a href="#"><img src="../images/group.png" alt="">Nhóm</a>
+            <a href="#"><img src="../images/watch.png" alt="">Watch</a>
+            <a href="#"><img src="../images/clock.png" alt="">Kỷ Niệm</a>
+            <a href="#"><img src=../images/mmm.png" alt="">Marketplace</a>
+            <a href="#"><img src="../images/muiten.png" alt="">Xem Thêm</a>
+        </div>
+
+        <div class="shortcut-links">
+            <p>Lối Tắt của bạn</p>
+            <a href="#"> <img src="../images/code-gym.png" alt="">CodeGym Đà nẵng</a>
+            <a href="#"> <img src="../images/vsbg-icon.png" alt="">Vietnamese Sexy Beauty Group - VSBG</a>
+            <a href="#"> <img src="../images/durex.jpg" alt="">Durex Việt Nam</a>
+        </div>
+    </div>
+
+    <div class="content-area">
+        <div class="story-gallery">
+            <div class="story story1">
+                <img src="../images/dat-icon.jpg" alt="">
+                <p>Tạo tin</p>
+            </div>
+            <div class="story story2">
+                <img src="../images/ha-icon.jpg" alt="">
+                <p>Phương Hà</p>
+            </div>
+            <div class="story story3">
+                <img src="../images/thao-icon.jpg" alt="">
+                <p>Võ Thị Phương Thảo</p>
+            </div>
+            <div class="story story4">
+                <img src="../images/icon-a-cogn.jpg" alt="">
+                <p>Thanh Công</p>
+            </div>
+            <div class="story story5">
+                <img src="../images/icon-toan.jpg" alt="">
+                <p>Toàn Nguyễn</p>
+            </div>
+        </div>
+
+        <div class="write-post-container">
+            <div class="user-profile">
+                <img src="../images/dat-icon.jpg" alt="">
+                <div class="post-upload-textarea">
+                        <textarea name="" placeholder="Đạt ơi bạn đang nghĩ gì thế ?" id="" cols="30"
+                                  rows="3"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="../images/live-video.png" alt="">Video Trực Tiếp</a>
+                        <a href="#"><img src="../images/photo.png" alt="">Ảnh/Video</a>
+                        <a href="#"><img src="../images/feeling.png" alt="">Cảm Xúc/Hoạt động</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="status-field-container write-post-container">
+            <div class="user-profile-box">
+                <div class="user-profile">
+                    <img src="../images/dat-icon.jpg" alt="">
+                    <div>
+                        <p> Tiến Đạt</p>
+                        <small>2 Giờ trước</small>
+                    </div>
+                </div>
+                <div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+            </div>
+            <div class="status-field">
+                <p>Yêu em như đi mua áo, chẳng biết đúng size :)))))</p>
+                <img src="../images/anh-dai-dien2.jpg" width="100" height="500" alt="">
+
+            </div>
+            <div class="post-reaction">
+                <div class="activity-icons">
+                    <div><img src="../images/like-blue.png" alt="">120</div>
+                    <div><img src="../images/comments.png" alt="">52</div>
+                    <div><img src="../images/share.png" alt="">35</div>
+                </div>
+                <div class="post-profile-picture">
+                    <img src="../images/dat-icon.jpg " alt=""> <i class=" fas fa-caret-down"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="status-field-container write-post-container">
+            <div class="user-profile-box">
+                <div class="user-profile">
+                    <img src="../images/chien-icon.jpg" alt="">
+                    <div>
+                        <p> Minh Chiến</p>
+                        <small>24 tháng 10 năm 2021</small>
+                    </div>
+                </div>
+                <div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+            </div>
+            <div class="status-field">
+                <p>BACK TO WORK !</p>
+                <img src="../images/chien-anh-nennnn.jpg" width="100" height="500" alt="">
+            </div>
+            <div class="post-reaction">
+                <div class="activity-icons">
+                    <div><img src="../images/like-blue.png" alt="">120</div>
+                    <div><img src="../images/comments.png" alt="">52</div>
+                    <div><img src="../images/share.png" alt="">35</div>
+                </div>
+                <div class="post-profile-picture">
+                    <img src="../images/dat-icon.jpg " alt=""> <i class=" fas fa-caret-down"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="status-field-container write-post-container">
+            <div class="user-profile-box">
+                <div class="user-profile">
+                    <img src="../images/icon-wy.jpg" alt="">
+                    <div>
+                        <p>WCY Music Studio</p>
+                        <small>24 tháng 10 năm 2021</small>
+                    </div>
+                </div>
+                <div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+            </div>
+            <div class="status-field">
+                <p>一口甜 - 我超喜欢你【動態歌詞/Lyrics Video】</p>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/l_o83l_HskY" title="一口甜 - 我超喜欢你【動態歌詞/Lyrics Video】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
+            <div class="post-reaction">
+                <div class="activity-icons">
+                    <div><img src="../images/like-blue.png" alt="">120</div>
+                    <div><img src="../images/comments.png" alt="">52</div>
+                    <div><img src="../images/share.png" alt="">35</div>
+                </div>
+                <div class="post-profile-picture">
+                    <img src="../images/dat-icon.jpg " alt=""> <i class=" fas fa-caret-down"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="right-sidebar">
+
+        <div class="heading-link">
+            <h4>Người Liên Hệ</h4>
+            <a href="">Xem Tất Cả</a>
+        </div>
+
+        <div class="online-list">
+            <div class="online">
+                <img src="../images/icon-a-cogn.jpg" alt="">
+            </div>
+            <p>Công Công</p>
+        </div>
+
+        <div class="online-list">
+            <div class="online">
+                <img src="../images/icon-truong.jpg" alt="">
+            </div>
+            <p>Trường Mập</p>
+        </div>
+        <div class="online-list">
+            <div class="online">
+                <img src="../images/icon-trung.jpg" alt="">
+            </div>
+            <p>Em Trung</p>
+        </div>
+        <div class="online-list">
+            <div class="online">
+                <img src="../images/icon-hao.jpg" alt="">
+            </div>
+            <p>Hảo Mập</p>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <p>Sống chậm lại yêu thương nhau nhiều hơn</p>
+</footer>
+<script src="function.js"></script>
+</body>
+</html>

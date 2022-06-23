@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js_script(document.currentScript); }/*FB_PKG_DELIM*/
+
+__d("StonehengeAccountLinkingDialogQuery$Parameters",["StonehengeAccountLinkingDialogQuery_facebookRelayOperation"],(function(a,b,c,d,e,f){"use strict";a={kind:"PreloadableConcreteRequest",params:{id:b("StonehengeAccountLinkingDialogQuery_facebookRelayOperation"),metadata:{},name:"StonehengeAccountLinkingDialogQuery",operationKind:"query",text:null}};e.exports=a}),null);

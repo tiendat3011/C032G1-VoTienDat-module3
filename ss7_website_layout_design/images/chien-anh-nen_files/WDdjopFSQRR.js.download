@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js_script(document.currentScript); }/*FB_PKG_DELIM*/
+
+__d("StonehengeAccountLinkingDialog.entrypoint",["JSResourceForInteraction","StonehengeAccountLinkingDialogQuery$Parameters","WebPixelRatio"],(function(a,b,c,d,e,f,g){"use strict";a={getPreloadProps:function(a){a=a.pageID;return{queries:{queryReference:{environmentProviderOptions:{},parameters:c("StonehengeAccountLinkingDialogQuery$Parameters"),variables:{pageID:a,scale:d("WebPixelRatio").get()}}}}},root:c("JSResourceForInteraction")("StonehengeAccountLinkingDialog.react").__setRef("StonehengeAccountLinkingDialog.entrypoint")};g["default"]=a}),98);
