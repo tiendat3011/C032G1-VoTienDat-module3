@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+
 @WebServlet(name = "UserServlet", urlPatterns = "/user")
 public class UserServlet extends HttpServlet {
     private IUserService userService = new UserServiceImpl();
@@ -25,10 +26,10 @@ public class UserServlet extends HttpServlet {
         }
         switch (action) {
             case "create":
-                create(request,response);
+                create(request, response);
                 break;
             case "update":
-                update(request,response);
+                update(request, response);
                 break;
             case "delete":
 
@@ -50,10 +51,8 @@ public class UserServlet extends HttpServlet {
         switch (action) {
             case "create":
                 showFormCreate(request, response);
-
                 break;
             case "update":
-                // chỉnh sửa
                 showFormUpdate(request, response);
                 break;
             case "delete":
@@ -77,6 +76,7 @@ public class UserServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+
     private void create(HttpServletRequest request, HttpServletResponse response) {
 
         String name = request.getParameter("name");
@@ -84,13 +84,13 @@ public class UserServlet extends HttpServlet {
         String country = request.getParameter("country");
 
 
-        User user = new  User(name,email,country);
+        User user = new User(name, email, country);
 
         userService.create(user);
         request.setAttribute("userList", user);
         request.setAttribute("mess", "Đã thêm thành công");
         try {
-            request.getRequestDispatcher("user/create.jsp").forward(request,response);
+            request.getRequestDispatcher("user/create.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -155,6 +155,7 @@ public class UserServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+
     private void update(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
 
@@ -168,7 +169,8 @@ public class UserServlet extends HttpServlet {
         user.setEmail(email);
         user.setCountry(country);
 
-        userService.update(id,user);
+
+        userService.update(id, user);
         request.setAttribute("user", user);
         request.setAttribute("mess", "successful update");
 

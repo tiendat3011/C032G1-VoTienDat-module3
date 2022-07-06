@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a297fb53-3d20-40c3-a15d-4c7f1fbe5d79" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../employee/src/main/java/repository/sql/employee.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../employee/src/main/java/repository/sql/employee.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../training/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../training/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../training/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../training/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../training/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../training/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../training/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../training/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../training/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../training/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../training/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../training/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../training/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../training/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../training/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../training/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../training/build/classes/java/main/repository/CinemaRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../training/build/classes/java/main/repository/CinemaRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../training/build/classes/java/main/repository/impl/CinemaRepoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../training/build/classes/java/main/repository/impl/CinemaRepoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../training/build/classes/java/main/service/CinemaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../training/build/classes/java/main/service/CinemaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../training/build/classes/java/main/service/impl/CinemaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../training/build/classes/java/main/service/impl/CinemaServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../training/build/libs/training-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../training/build/libs/training-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../training/src/main/java/controller/CinemaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../training/src/main/java/controller/CinemaServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../training/src/main/java/repository/CinemaRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../training/src/main/java/repository/CinemaRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../training/src/main/java/repository/impl/CinemaRepoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../training/src/main/java/repository/impl/CinemaRepoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../training/src/main/java/service/CinemaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../training/src/main/java/service/CinemaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../training/src/main/java/service/impl/CinemaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../training/src/main/java/service/impl/CinemaServiceImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="2A1K4MsZ8b7YsTyyYHI0l5lwBBj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../C0222G1-TranXuanTruong-Module2" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\C0222G1-TranXuanTruong-Module3\case_study_jsp_servlet\furama\src\main\webapp\employee" />
+      <recent name="D:\C0222G1-TranXuanTruong-Module3\case_study_jsp_servlet\furama\src\main\webapp" />
+      <recent name="D:\C0222G1-TranXuanTruong-Module3\case_study_jsp_servlet\furama\src\main\webapp\view" />
+      <recent name="D:\C0222G1-TranXuanTruong-Module3\case_study_jsp_servlet\furama\src\main\webapp\customer" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="model.service_furama" />
+      <recent name="controller.utf8" />
+      <recent name="service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\C0222G1-TranXuanTruong-Module3\case_study_jsp_servlet\furama\src\main\webapp\home-page" />
+      <recent name="D:\C0222G1-TranXuanTruong-Module3\case_study_jsp_servlet\furama\src\main\webapp" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.63" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.63" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="HOT_SWAP_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="Gradle : org.example : furama-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_furama_6" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62728" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : org.example : furama-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_furama" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62728" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a297fb53-3d20-40c3-a15d-4c7f1fbe5d79" name="Default Changelist" comment="" />
+      <created>1654171458922</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654171458922</updated>
+      <workItem from="1654171464617" duration="3560000" />
+      <workItem from="1654175300540" duration="198000" />
+      <workItem from="1654175530415" duration="606000" />
+      <workItem from="1654176402375" duration="10777000" />
+      <workItem from="1654218747045" duration="24521000" />
+      <workItem from="1654261336855" duration="5569000" />
+      <workItem from="1654270137727" duration="2430000" />
+      <workItem from="1654324135779" duration="21446000" />
+      <workItem from="1654418135958" duration="17216000" />
+      <workItem from="1654477961825" duration="7565000" />
+      <workItem from="1654503684605" duration="2781000" />
+      <workItem from="1654511123275" duration="5980000" />
+      <workItem from="1654564132762" duration="17588000" />
+      <workItem from="1654605625199" duration="2008000" />
+      <workItem from="1654654142037" duration="2986000" />
+      <workItem from="1654692623783" duration="568000" />
+      <workItem from="1654693957234" duration="236000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="395" y="111" key="#Inspections" timestamp="1654183383410">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="395" y="111" key="#Inspections/0.0.1536.864@0.0.1536.864" timestamp="1654183383410" />
+    <state x="206" y="274" key="#SQL_Dialects" timestamp="1654173131552">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="206" y="274" key="#SQL_Dialects/0.0.1536.864@0.0.1536.864" timestamp="1654173131552" />
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1654264202208">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1654264202208" />
+    <state x="190" y="139" key="#com.intellij.ide.util.MemberChooser" timestamp="1654584238767">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="190" y="139" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1654584238767" />
+    <state x="499" y="71" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1654175466771">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="499" y="71" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1536.864@0.0.1536.864" timestamp="1654175466771" />
+    <state x="350" y="357" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1654266815385">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="350" y="357" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.864@0.0.1536.864" timestamp="1654266815385" />
+    <state x="482" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1654327479341">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="482" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.864@0.0.1536.864" timestamp="1654327479341" />
+    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1654183487554">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1654183487554" />
+    <state x="524" y="135" key="#xdebugger.evaluate" timestamp="1654348035492">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="524" y="135" key="#xdebugger.evaluate/0.0.1536.864@0.0.1536.864" timestamp="1654348035492" />
+    <state x="548" y="188" key="FileChooserDialogImpl" timestamp="1654434206354">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="548" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1654434206354" />
+    <state width="1024" height="308" key="GridCell.Tab.0.bottom" timestamp="1654597378211">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1024" height="308" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1654597378211" />
+    <state width="1024" height="308" key="GridCell.Tab.0.center" timestamp="1654597378211">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1024" height="308" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1654597378211" />
+    <state width="1024" height="308" key="GridCell.Tab.0.left" timestamp="1654597378210">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1024" height="308" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1654597378210" />
+    <state width="1024" height="308" key="GridCell.Tab.0.right" timestamp="1654597378211">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1024" height="308" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1654597378211" />
+    <state width="1024" height="308" key="GridCell.Tab.1.bottom" timestamp="1654591804972">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1024" height="308" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1654591804972" />
+    <state width="1024" height="308" key="GridCell.Tab.1.center" timestamp="1654591804972">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1024" height="308" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1654591804972" />
+    <state width="1024" height="308" key="GridCell.Tab.1.left" timestamp="1654591804972">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1024" height="308" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1654591804972" />
+    <state width="1024" height="308" key="GridCell.Tab.1.right" timestamp="1654591804972">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1024" height="308" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1654591804972" />
+    <state width="1024" height="308" key="GridCell.Tab.2.bottom" timestamp="1654591804973">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1024" height="308" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1654591804973" />
+    <state width="1024" height="308" key="GridCell.Tab.2.center" timestamp="1654591804972">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1024" height="308" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1654591804972" />
+    <state width="1024" height="308" key="GridCell.Tab.2.left" timestamp="1654591804972">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1024" height="308" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1654591804972" />
+    <state width="1024" height="308" key="GridCell.Tab.2.right" timestamp="1654591804973">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1024" height="308" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1654591804973" />
+    <state width="1024" height="389" key="GridCell.Tab.3.bottom" timestamp="1654348079887">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1024" height="389" key="GridCell.Tab.3.bottom/0.0.1536.864@0.0.1536.864" timestamp="1654348079887" />
+    <state width="1024" height="389" key="GridCell.Tab.3.center" timestamp="1654348079887">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1024" height="389" key="GridCell.Tab.3.center/0.0.1536.864@0.0.1536.864" timestamp="1654348079887" />
+    <state width="1024" height="389" key="GridCell.Tab.3.left" timestamp="1654348079887">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1024" height="389" key="GridCell.Tab.3.left/0.0.1536.864@0.0.1536.864" timestamp="1654348079887" />
+    <state width="1024" height="389" key="GridCell.Tab.3.right" timestamp="1654348079887">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1024" height="389" key="GridCell.Tab.3.right/0.0.1536.864@0.0.1536.864" timestamp="1654348079887" />
+    <state width="775" height="439" key="XDebugger.FullValuePopup" timestamp="1654347951242">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="775" height="439" key="XDebugger.FullValuePopup/0.0.1536.864@0.0.1536.864" timestamp="1654347951242" />
+    <state x="209" y="43" key="new project wizard" timestamp="1654434214664">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="209" y="43" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1654434214664" />
+    <state x="425" y="197" key="run.anything.popup" timestamp="1654420384546">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1654420384546" />
+    <state x="425" y="85" width="670" height="676" key="search.everywhere.popup" timestamp="1654354418068">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="85" width="670" height="676" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1654354418068" />
+  </component>
+</project>

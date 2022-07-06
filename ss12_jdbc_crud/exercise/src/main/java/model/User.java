@@ -5,12 +5,14 @@ public class User {
     private String name;
     private String email;
     private String country;
+    private int status;
 
-    public User(int id, String name, String email, String country) {
+    public User(int id, String name, String email, String country, int status) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.country = country;
+        this.status = status;
     }
     public User( String name, String email, String country) {
         this.name = name;
@@ -51,4 +53,11 @@ public class User {
         this.country = country;
     }
 
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
 }

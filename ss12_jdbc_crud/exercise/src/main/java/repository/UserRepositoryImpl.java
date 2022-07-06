@@ -30,7 +30,8 @@ public class UserRepositoryImpl implements IUserRepository {
                 String name = resultSet.getString("name");
                 String email = resultSet.getString("email");
                 String country = resultSet.getString("country");
-                User user = new User(id, name, email, country);
+                int status = resultSet.getInt("status");
+                User user = new User(id, name, email, country, status);
                 list.add(user);
             }
         } catch (SQLException throwables) {
@@ -70,7 +71,8 @@ public class UserRepositoryImpl implements IUserRepository {
             String name = resultSet.getString("name");
             String email = resultSet.getString("email");
             String country = resultSet.getString("country");
-            user = new User(id, name, email, country);
+            int status = resultSet.getInt("status");
+            user = new User(id, name, email, country, status);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
@@ -113,7 +115,6 @@ public class UserRepositoryImpl implements IUserRepository {
         List<User> userList = findAll();
         List<User> searchByCountry = new ArrayList<>();
         Connection connection = BaseRepository.getConnectDB();
-
         try {
             PreparedStatement ps = connection.prepareStatement(FIND_BY_NAME);
             ps.setString(1, country);
